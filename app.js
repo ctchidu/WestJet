@@ -92,7 +92,7 @@ app.post('/facebook', json_body_parser, function(req, response) {
                 else if (messagingEvent.postback && messagingEvent.postback.payload) {
 			console.log(messagingEvent.postback.payload);
 			var sender_id = messagingEvent.sender.id;
-                            if (messagingEvent.postback.payload === "GET_STARTED") {
+                            if (messagingEvent.postback.payload === "FACEBOOK_WELCOME") {
 				                facebookGreeting.facebookGreeting(messagingEvent);
                             }else if(messagingEvent.postback.payload === "baggage fare"){
 				    facebookBagFare.facebookBagFare(messagingEvent);
