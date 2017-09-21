@@ -12,27 +12,27 @@ var facebookBagFare = function(event) {
 						"id":sender_id
 					  },
 					"message":{
-						"text": "May I know which country you are travelling to?",
+						"text": "May I know in which class you are travelling?",
 						    "quick_replies":[
 							{"content_type":"text",
-							"title":"Canada",
-							"payload":"CANADA"
+							"title":"Economy",
+							"payload":"ECONO"
 							},
 							{"content_type":"text",
-							"title":"U.S",
-							"payload":"US"
+							"title":"Flex",
+							"payload":"FLEX"
 							},
 							{"content_type":"text",
-							"title":"Mexico/Caribbean",
-							"payload":"SUN"
+							"title":"Plus Lowest",
+							"payload":"PLUS LOWEST"
 							},
 							{"content_type":"text",
-							"title":"International",
-							"payload":"INTERNATIONAL"
+							"title":"Plus Flexible",
+							"payload":"PLUS FLEXIBLE"
 							}    
 						    ]
 						}
-					}	
+				}	
                 sendMessage(messageData);
 }
 
