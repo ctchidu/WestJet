@@ -22,6 +22,7 @@ var handleFacebookTextMessage = function(event) {
             var text = response_bot.result.fulfillment.speech;
             var action = response_bot.result.action;
 console.log('facebook');
+console.log(text);		
 
 		if((text == 'May I know in which class you are travelling ? Economy or Flex or Plus Lowest or Plus Flexible') && (action == 'baggagefare')){
 		   
