@@ -19,10 +19,10 @@ function facebookBagStatus(event) {
                   elements: [{
                     title: "Thank you for contacting us.",
                     subtitle: "Kindly visit our site for more information on baggage status.",
-                    image_url: "http://www.camasformation.fr/wp-content/uploads/2014/09/wt-small.jpg",
+                    image_url: "https://raw.githubusercontent.com/ctchidu/WestJet/master/baggagestatus.jpg",
                     buttons: [{
 			          type:"web_url",
-                url:"https://www.aircanada.com/ca/en/aco/home/plan/baggage/delayed-damaged-baggage.html",
+                url:"https://westjet.nettracer.aero/paxview/login.do",
                 title:"View Website"
                     }]
                   }]
