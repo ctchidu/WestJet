@@ -22,35 +22,8 @@ var handleFacebookTextMessage = function(event) {
             var text = response_bot.result.fulfillment.speech;
             var action = response_bot.result.action;
 console.log('facebook');
-		        if((text == 'May I know which country you are travelling to ? Canada or US or Mexico/Caribbean or International') && (action == 'baggagefare')){
-			let messageData = {
-					  "recipient":{
-						"id":sender_id
-					  },
-					"message":{
-						"text": "May I know which country you are travelling to?",
-						    "quick_replies":[
-							{"content_type":"text",
-							"title":"Canada",
-							"payload":"CANADA"
-							},
-							{"content_type":"text",
-							"title":"U.S",
-							"payload":"US"
-							},
-							{"content_type":"text",
-							"title":"Mexico/Caribbean",
-							"payload":"SUN"
-							},
-							{"content_type":"text",
-							"title":"International",
-							"payload":"INTERNATIONAL"
-							}    
-						    ]
-						}
-				}	
-                sendMessage(messageData);                
-           } else if((text == 'May I know in which class you are travelling ? Economy or Premium Economy or Business') && (action == 'baggagefare')){
+
+		if((text == 'May I know in which class you are travelling ? Economy or Premium Economy or Business') && (action == 'baggagefare')){
 		   
 		   			let messageData = {
 					  "recipient":{
@@ -61,15 +34,19 @@ console.log('facebook');
 						    "quick_replies":[
 							{"content_type":"text",
 							"title":"Economy",
-							"payload":"ECONOMY"
+							"payload":"ECONO"
 							},
 							{"content_type":"text",
-							"title":"Premium economy",
-							"payload":"PREMIUM ECONOMY"
+							"title":"Flex",
+							"payload":"FLEX"
 							},
 							{"content_type":"text",
-							"title":"Business",
-							"payload":"BUSINESS"
+							"title":"Plus Lowest",
+							"payload":"PLUS LOWEST"
+							},
+							{"content_type":"text",
+							"title":"Plus Flexible",
+							"payload":"PLUS FLEXIBLE"
 							}    
 						    ]
 						}
