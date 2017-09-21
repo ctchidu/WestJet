@@ -6,20 +6,6 @@ var nodemailer = require('nodemailer');
 var jsonData,statusData,allData;
 
 
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'ctchidu@gmail.com',
-    pass: 'Dec@2016'
-  }
-});
-
-var mailOptions = {
-  from: 'ctchidu@gmail.com',
-  to: 'kutianna@yahoo.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
-};
 
 
 
@@ -103,18 +89,13 @@ var fulfillmentRequest = function(request, response) {
 			
 
 		if(frequentfly){
-		var locationcountry = locationcountry.toUpperCase();
                 var travelclass = travelclass.toUpperCase();
-		var frequentfly = frequentfly.toUpperCase();
-		if(locationcountry === "U.S"){
-			locationcountry="US";
-		   }
-		console.log(locationcountry);	
+		var frequentfly = frequentfly.toUpperCase();	
 		console.log(travelclass);
 		console.log(frequentfly);
 			
 		for(i = 0; i < jsonData.length; i++){
-		 if((jsonData[i].COUNTRY == locationcountry) && (jsonData[i].ALTITUDE == frequentfly) && (jsonData[i].CLASS == travelclass)){	
+		 if((jsonData[i].CLASS == travelclass)){	
 			      					  str  = {
 						  "speech": jsonData[i].FARE,
 						  "displayText": jsonData[i].FARE,
@@ -140,7 +121,7 @@ var fulfillmentRequest = function(request, response) {
 								{
 								  "title": "Read more",
 								  "openUrlAction": {
-								    "url": "https://www.aircanada.com/ca/en/aco/home/plan/baggage/checked.html"
+								    "url": "https://www.westjet.com/en-ca/travel-info/fares/our-fares/options"
 								  }
 								}
 							      ]
