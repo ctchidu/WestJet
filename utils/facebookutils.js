@@ -23,7 +23,7 @@ var handleFacebookTextMessage = function(event) {
             var action = response_bot.result.action;
 console.log('facebook');
 
-		if((text == 'May I know in which class you are travelling ? Economy or Premium Economy or Business') && (action == 'baggagefare')){
+		if((text == 'May I know in which class you are travelling ? Economy or Flex or Plus Lowest or Plus Flexible') && (action == 'baggagefare')){
 		   
 		   			let messageData = {
 					  "recipient":{
@@ -54,38 +54,30 @@ console.log('facebook');
 		   
 		   sendMessage(messageData);
 		   
-		   }else if((text == 'What is your Air Canada altitude status? NONE or SUPER ELITE 100K or ELITE 75K,ELITE 50K,ELITE 35K or PRESTIGE 25K or STAR ALLIANCE GOLD or STAR ALLIANCE SILVER') && (action == 'baggagefare')){
+		   }else if((text == 'What is your WestJet rewards membership? NONE or Elite or Silver or Gold') && (action == 'baggagefare')){
 		   
 		   			let messageData = {
 					  "recipient":{
 						"id":sender_id
 					  },
 					"message":{
-						"text": "May I know your Air Canada altitude status?",
+						"text": "May I know your WestJet rewards membership?",
 						    "quick_replies":[
 							{"content_type":"text",
 							"title":"NONE",
 							"payload":"NONE"
 							},
 							{"content_type":"text",
-							"title":"SUPER ELITE 100K",
-							"payload":"100K"
+							"title":"ELITE",
+							"payload":"ELITE"
 							},
 							{"content_type":"text",
-							"title":"ELITE 75K,50K,35K",
-							"payload":"75K50K35K"
-							},
-							{"content_type":"text",
-							"title":"PRESTIGE 25K",
-							"payload":"25K"
-							},
-							{"content_type":"text",
-							"title":"STAR ALLIANCE GOLD",
-							"payload":"GOLD"
-							},
-							{"content_type":"text",
-							"title":"STAR ALLIANCE SILVER",
+							"title":"SILVER",
 							"payload":"SILVER"
+							},
+							{"content_type":"text",
+							"title":"GOLD",
+							"payload":"GOLD"
 							}             
 						    ]
 						}
