@@ -91,7 +91,7 @@ var fulfillmentRequest = function(request, response) {
 		if(frequentfly){
                 var travelclass = travelclass.toUpperCase();
 		var frequentfly = frequentfly.toUpperCase();
-		if(frequentfly = 'NONE'){
+		if(frequentfly == 'NONE'){
 			travelclass = travelclass;
 		   }else{
 			   travelclass = frequentfly;
