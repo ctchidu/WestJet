@@ -202,7 +202,7 @@ var fulfillmentRequest = function(request, response) {
 							"description":"Regardless of your destination, you can bring 1 standard article. Kindly click above for more queries.",
 							"image":
 							{
-							  "url":"https://www.aircanada.com/content/dam/aircanada/portal/images/content-images/plan/baggage/std-article.png",
+							  "url":"https://raw.githubusercontent.com/ctchidu/WestJet/master/std-article.png",
 							  "accessibilityText":"Image alternate text"
 							}
 						      },
@@ -220,7 +220,7 @@ var fulfillmentRequest = function(request, response) {
 							"description":"Regardless of your destination, you can bring 1 personal article. Kindly click above for more queries.",
 							"image":
 							{
-							  "url":"https://www.aircanada.com/content/dam/aircanada/portal/images/content-images/plan/baggage/personal-article.png",
+							  "url":"https://raw.githubusercontent.com/ctchidu/WestJet/master/personal-article.png",
 							  "accessibilityText":"Google Home"
 							}
 						      }
