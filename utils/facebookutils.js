@@ -55,7 +55,7 @@ console.log(text);
 		   
 		   sendMessage(messageData);
 		   
-		   }else if((text == 'What is your WestJet rewards membership? NONE or Elite or Silver or Gold') && (action == 'baggagefare')){
+		   }else if((text == 'What is your WestJet rewards membership? None or Elite or Silver or Gold') && (action == 'baggagefare')){
 		   
 		   			let messageData = {
 					  "recipient":{
