@@ -88,7 +88,7 @@ var fulfillmentRequest = function(request, response) {
 			
 			
 
-		if(frequentfly){
+		if(travelclass){
                 var travelclass = travelclass.toUpperCase();
 		var frequentfly = frequentfly.toUpperCase();
 		console.log(travelclass);
